@@ -5,7 +5,7 @@ We built an ETL pipeline that carries out the following tasks:
 - Extracts transactional data related with invoices from Redshift
 - Transforms data by identifying and removing duplicates
 - Transforms invoice_date data type by fixing a variable
-- Loads transformed data to AWS s3 bucket
+- Loads transformed data to AWS S3 bucket
 
 ### Requirements
 The minimum requirements:
