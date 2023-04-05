@@ -30,4 +30,3 @@ Then run the job:
 ```bash
  docker run --env-file .env etl-pipeline:0.1
 ```
-zbvbnvxnb
