@@ -10,7 +10,9 @@ We built an ETL pipeline that carries out the following tasks:
 ### Requirements
 The minimum requirements:
 - Docker for Mac: [Docker](https://docs.docker.com/desktop/install/mac-install/) 
-- Docker for Windows: [Docker](https://docs.docker.com/desktop/install/windows-install/) 
+- Docker for Windows:
+  - Installation: [Docker](https://docs.docker.com/desktop/install/windows-install/)
+  - Manual installation steps for older WSL version: [Docker WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
 - AWS Redshift connection details
 - AWS S3 Bucket details
 
