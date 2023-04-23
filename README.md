@@ -1,11 +1,12 @@
 # ETL Pipeline
 
 ### Introduction
-We built an ETL pipeline that carries out the following tasks:
+We built an ETL pipeline that carries out the following tasks and unit test for definitions:
 - Extracts transactional data related with invoices from Redshift
 - Transforms data by identifying and removing duplicates
 - Transforms invoice_date data type by fixing a variable
 - Loads transformed data to AWS S3 bucket
+- Unit test for definition
 
 ### Requirements
 The minimum requirements:
@@ -31,4 +32,10 @@ docker image build -t etl-pipeline:0.1 .
 Then run the job:
 ```bash
  docker run --env-file .env etl-pipeline:0.1
+```
+
+To run unit test:
+```bash
+  python -m unittest
+  python -m unittest tests/*
 ```
