@@ -23,7 +23,7 @@ Copy the .env.example file to .env and fill out the environment vars.
 
 For Docker:
 
-Make sure you are executing the code from the etl_pipeline folder.
+Make sure you are executing the code from the etl-pipeline folder.
 
 - To run it locally first build the image:
 
@@ -37,7 +37,7 @@ docker image build -t etl-pipeline:0.1 .
 ```
 
 For unit test:
-Make sure you are executing the code from the etl_pipeline folder.
+Make sure you are executing the code from the etl-pipeline folder.
 
 ```bash
   python -m unittest
