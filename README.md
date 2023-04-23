@@ -21,21 +21,25 @@ The minimum requirements:
 
 Copy the .env.example file to .env and fill out the environment vars.
 
+For Docker:
+
 Make sure you are executing the code from the etl_pipeline folder.
 
-To run it locally first build the image.
+- To run it locally first build the image:
 
 ```bash
 docker image build -t etl-pipeline:0.1 .
 ```
 
-Then run the job:
+- Then run the image:
 ```bash
  docker run --env-file .env etl-pipeline:0.1
 ```
 
-To run unit test:
+For unit test:
+Make sure you are executing the code from the etl_pipeline folder.
+
 ```bash
   python -m unittest
-  python -m unittest tests/*
+  python -m unittest test.test_transfrom
 ```
