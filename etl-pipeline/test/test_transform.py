@@ -16,6 +16,12 @@ class TestIdentifyAndRemoveDuplicates(unittest.TestCase):
         result = identify_and_remove_duplicated_data(d)
         assert_frame_equal(result, d)
 
+    def test_duplicates_keep_first(self):
+        d = pd.DataFrame({'col1': [1, 2, 1, 4], 'col2': [3, 4, 3, 5]})
+        result = identify_and_remove_duplicated_data(d)
+        expected_d = pd.DataFrame({'col1': [1, 2, 4], 'col2': [3, 4, 5]})
+        assert_frame_equal(result.reset_index(drop=True), expected_d.reset_index(drop=True))
+
 
 if __name__ == '__main__':
     unittest.main()
